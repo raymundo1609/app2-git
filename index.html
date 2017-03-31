@@ -1,0 +1,250 @@
+﻿<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Segunda Aplicacion</title>
+ 
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app1.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ </head>
+
+ <body>
+ 
+    <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-black-btn-txt="Regresar" data-back-btn-theme="b">
+     <h1>Telefonia Celular</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Samsung S7 Edge</h1>
+       <div>
+        <p>Estas son imagenes de un Samsung S7 edge:</p>
+        <br>
+       </div>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('s7 edge','','imagenes/Samsung-Galaxy-S7-2.jpg',1)"><img src="imagenes/galaxy-s7-edge-1.jpg" alt="s7 edge" width="50%" height="50%" id="s7 edge"></a> </div>
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+          <h1>Iphone 7 </h1>
+           <div>
+            <p>Esta son imagenes del iphone 7:</p>
+            <br>
+           </div> 
+           <div>
+   	       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('iphone 7','','imagenes/iphone7lineup.jpg',1)"><img src="imagenes/iphone7.jpg" alt="iphone 7" width="50%" height="50%" id="iphone 7"></a> </div>
+      </div> 
+    </div>
+    
+    <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Definicion</h2>
+       <p>Se muestra una breve definicion de telefono celular</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>	Historia</h2>
+       <p>Se muestra un poco de la historia de los telefonos celulares</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Clasificacion</h2>
+       <p>Se Muetra como se clasifican lo;s telefonos celulares</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Companias Telefonicas</h2>
+       <p>Musetra las ccompanias telefonicas que operan en mexico</p>
+       </a>
+     </li>
+     </ul>
+    </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+      <img src="imagenes/logo.png" width="46" height="46" alt="logo">
+     </div>
+     <div>
+      <h4>Aplicacion Dos</h4>
+      <h4>Raymundo Angel Vazquez Rojas</h4>
+     </div>
+    </div>
+   </div>
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Definicion</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <h2>Aparato que recibe y emite comunicaciones a larga distancia y está conectado a una red telefónica</h2>
+         <h3>EJEMPLOS</h3>
+         <div data-role="collapsible" data-content-theme="false">
+      <h1>Samsung S7 Edge</h1>
+       <div>
+        <p>Estas son imagenes de un Samsung S7 edge:</p>
+        <br>
+       </div>
+       <div><img src="imagenes/galaxy-s7-edge-1.jpg" width="50%" height="50%" alt="s7 edge"></div>
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>iphone 7</h1>
+       <div>
+        <p>Estas son imagenes de un iphone 7:</p>
+        <br>
+       </div>
+       <div><img src="imagenes/iphone7.jpg" width="50%" height="50%" alt="iphone 7"></div>
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>huawei p9</h1>
+       <div>
+        <p>Estas son imagenes de un huawei p9:</p>
+        <br>
+       </div>
+       <div><img src="imagenes/huawei.jpg" width="50%" height="50%" alt="p9"></div>
+     </div>
+       </div>
+     </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+       <div align="center">
+      <img src="imagenes/logo.png" width="46" height="46" alt="logo">
+     </div>
+       <h4>App2, RAVR</h4>
+     </div>
+   </div>
+   
+   
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Historia</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <h2>Tres décadas atrás fue creado el primer aparato que abrió el camino al desarrollo de la tecnología de telefonía móvil.
+
+Hace 30 años la compañía finlandesa Nokia creó el primer teléfono portátil: un aparato de 9,5 kilos que fue fabricado para ser utilizado en dentro los automóviles.</h2></div>
+<img src="imagenes/motorola1.jpg" width="50%" height="50%" alt="motorola1">
+ <div><h2> Un año después empezó a ser comercializado un Motorola que pesaba doce veces menos: el DynaTAC 8000X. Catorce años más tarde vino un aparato liviano y elegante de sólo de 88 gramos.</h2></div>
+ <img src="imagenes/nokia1.jpg" width="50%" height="50%" alt="nokia1">
+<div><h2>
+Las últimas invenciones parecían cada vez más increíbles: un móvil con cámara a color incorporada, la aparición de los teléfonos inteligentes con las últimas tecnologías en multimedia, un aparato con pantalla táctil. Desde el primer momento las innovaciones no han parado.</h2><img src="imagenes/Samsung-Galaxy-S8-Plus-diseno.jpg" width="50%" height="50%" alt="s8"></div>
+
+
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="imagenes/logo.png" width="46" height="46" alt="logo">
+     </div>
+       <h4>App2, RAVR</h4>
+     </div>
+     </div>
+     </div> 
+      
+         
+   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Clasificacion</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <h2>Celulares de baja gama:</h2><H3> bajo este nombre se identifican a aquellos teléfonos móviles que cuentan si bien cuentan con una cámara de fotos, esta es de baja calidad. Además de esto, incluyen un reproductor de música aunque de los más básicos, al igual que la memoria que presentan, que es bastante limitada. Los celulares de baja gama tampoco incluyen pantalla táctil y ésta suele ser de tamaño reducido. La conexión a Internet que ofrecen es bastante limitada y no cuentan con 3G. A pesar de que estos dispositivos son bastante limitados, siguen siendo muy utilizados por los usuarios ya que ofrecen servicios que, para quienes no son muy exigentes o lo usan de forma esporádica,  satisfacen las necesidades que estos usuarios pueden tener, principalmente la de mantenerse comunicados con otros usuarios.</h3></div>
+        <div data-role="collapsible" data-content-theme="false">
+           <h1>ejemplo de de gama baja</h1>
+           <div>
+            <p>El moto g4 play es un celular de gama baja:</p>
+           <br>
+           </div>
+           <div><img src="imagenes/motog4play.jpg" width="50%" height="50%" alt="g4play"></div>
+        </div>
+     <div>
+         <h2>Celulares de gama media:</h2><H3> estos celulares, en cambio, ofrecen pantallas un poco más grandes que los anteriores, por lo que su calidad es bastante mayor y resultan mucho más prácticas para los usuarios. Además de esto, la cámara de fotos que tienen es de mayor calidad, al igual que los reproductores de MP3. Estos teléfonos móviles también ofrecen juegos, mensaje de texto, calculadora y distintas aplicaciones. Con respecto a la conexión a Internet, permite navegar con HTML y puede ocurrir que algunos modelos cuenten con 3G.</h3></div>
+       <div data-role="collapsible" data-content-theme="false">
+      <h1>ejemplo de gama media</h1>
+       <div>
+        <p>El lg g5 es un celular de gama media:</p>
+        <br>
+       </div>
+       <div><img src="imagenes/lgg5.jpg" width="50%" height="50%" alt="g5"></div>
+     </div>  
+     <div>
+         <h2>Celulares de gama alta:</h2><H3> los teléfonos móviles de alta gama ofrecen varias de las opciones antes mencionadas, pero con mejor calidad, como ocurre con la cámara de fotos o el reproductor de música. Además de esto, la conexión a Internet suele ser de mejor calidad y velocidad y ofrecen 3G. Además, cuentan con Bluetooth y como permiten conexión Wi Fi muchas veces no se venden con planes de Internet.</h3></div>
+       <div data-role="collapsible" data-content-theme="false">
+      <h1>ejemplo de gama alta</h1>
+       <div>
+        <p>El iphone 7 es un celular de gama alta:</p>
+        <br>
+       </div>
+       <div><img src="imagenes/iphone7.jpg" width="50%" height="50%" alt="iphone 7"></div>
+     </div>    
+       </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="imagenes/logo.png" width="46" height="46" alt="logo">
+     </div>
+       <h4>App2,RAVR</h4>
+       </div>
+     </div>
+     </div>
+     
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Companias Telefonicas en Mexico</h1>
+       </div>
+       <div data-role="content" align="center">
+          <div data-role="collapsible" data-content-theme="false">
+            <h1>Telcel</h1>
+          
+            <div><img src="imagenes/telcel.jpg" width="50%" height="50%" alt="telcel"></div>
+          </div>
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>Movistar</h1>
+       
+       <div><img src="imagenes/movistar.jpg" width="400" height="400" alt="movistar"></div>
+     </div>
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>Unefon</h1>
+      
+       <div><img src="imagenes/unefon.jpg" width="50%" height="50%" alt="unefon"></div>
+     </div>
+       </div>
+       
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <div align="center">
+      <img src="imagenes/logo.png" width="46" height="46" alt="logo">
+       </div>
+         <h4>App2, RAVR</h4>
+         </div>
+         </div>        
+ </body>
+</html>
